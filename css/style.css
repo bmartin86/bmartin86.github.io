@@ -62,7 +62,7 @@ body {
   opacity: 0;
   transition: opacity 0.25s ease;
   color: #fff;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.4);
   letter-spacing: .08em;
 }
 
