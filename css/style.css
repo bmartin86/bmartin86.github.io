@@ -1,0 +1,72 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("images/background-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  position: fixed;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.my-name {
+  font-size: 2.8rem;
+  letter-spacing: .1em;
+}
+
+.my-job {
+  font-size: 2.2rem;
+  letter-spacing: .09em;
+}
+
+.profile-photo,
+.project-thumbnail {
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.project-thumbnail,
+.project-caption,
+.project-name {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.project-caption,
+.project-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.15);
+  letter-spacing: .08em;
+}
+
+.portfolio-box:hover .project-name,
+.portfolio-box:hover .project-caption {
+  opacity: 1;
+}
